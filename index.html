@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="index.js" defer></script>
     <title>Etch a Sketch</title>
 </head>
 <body>
-    
+    <main>
+        <div id="grid-container">
+            <h2>Etch A Seketch</h2>
+            <div id="grid"></div>
+        </div>
+        <div id="menu">
+            <input id="colorpicker" type="color" value="#333333">
+            <button class="active" id="color-button">Color mode</button>
+            <button id="rainbow-button">Rainbow mode</button>
+            <button id="eraser-button">Eraser Mode</button>
+            <button id="toggle-lines-button">Toggle Lines</button>
+            <button id="clear-button">Clear</button>
+            <div id="slider">
+                <div>16 x 16</div>
+                <input type="range" min="1" max="64" value="16">
+            </div>
+        </div>
+       
+    </main>
 </body>
 </html>
